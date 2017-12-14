@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="30dp"
-    tools:context="org.bubulescu.fragmentsrecap.MainActivity">
+    android:background="@color/colorPrimaryDark"
+    tools:context="org.bubulescu.fragmentsrecap.SecondActivity">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Second Activity"
-        android:id="@+id/bSecondActivity"
+        android:text="Fragment"
+        android:id="@+id/bFragment"
         />
 
-    <Button
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Third Activity"
-        android:id="@+id/bThirdActivity"
+        android:layout_height="match_parent"
+        android:id="@+id/flContainer"
         />
 
 </LinearLayout>
