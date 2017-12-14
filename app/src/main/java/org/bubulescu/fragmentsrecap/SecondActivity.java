@@ -20,10 +20,22 @@ public class SecondActivity extends AppCompatActivity {
         bFragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .add(R.id.flContainer, new FirstFragment())
-                        .commit();
+
+                android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+
+                if (fragmentManager.findFragmentById(R.id.flContainer)==null) {
+                    fragmentManager
+                            .beginTransaction()
+                            .add(R.id.flContainer, new FirstFragment())
+                            .commit();
+
+                } else {
+                    fragmentManager
+                            .beginTransaction()
+                            .remove(fragmentManager.findFragmentById(R.id.flContainer))
+                            .commit();
+                }
+
             }
         });
     }

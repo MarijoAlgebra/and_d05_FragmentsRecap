@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Fragment"
+        android:text="Fragment toggle"
         android:id="@+id/bFragment"
         />
 
