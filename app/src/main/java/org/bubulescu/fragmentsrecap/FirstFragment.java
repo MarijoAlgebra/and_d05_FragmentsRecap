@@ -29,7 +29,7 @@ public class FirstFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.i("FirstFragment", "onCreateView();");
+        Log.i("FF", "onCreateView();");
         // Inflate the layout for this fragment
         View firstFragment = inflater.inflate(R.layout.fragment_first, container, false);
 
@@ -47,11 +47,5 @@ public class FirstFragment extends Fragment {
         });
 
         return firstFragment;
-    }
-
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        Log.i(TAG, "onSaveInstanceState();");
-        super.onSaveInstanceState(outState);
     }
 }
